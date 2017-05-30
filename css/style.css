@@ -19,7 +19,7 @@ body {
 	height: 100%;
 }
 body {
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1.50;
 	color: #333333;
 	background-color: #ffffff;
@@ -142,12 +142,12 @@ blockquote {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.55);
+	background-color: rgba(0, 0, 0, 0.25);
 	content: "";
 }
 .banner-caption {
 	position: absolute;
-	top: 40%;
+	top: 75%;
 	width: 100%;
 	z-index: 2;
 }
@@ -159,7 +159,7 @@ blockquote {
 }
 .section {
 	background-color: #ffffff;
-	padding: 80px 0;
+	padding: 40px 0;
 }
 
 /* Backgrounds
@@ -223,7 +223,7 @@ blockquote {
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	/*background-color: rgba(0, 0, 0, 0.7);*/
 }
 .translucent-bg.blue:after {
 	background-color: rgba(85, 172, 238, 0.7);
@@ -233,7 +233,18 @@ blockquote {
 	position: relative;
 }
 .bg-image-1 {
-	background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;
+	/*background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;*/
+	background: url("../images/picturegroup.jpg") 50% 0px no-repeat;
+	background-size: contain;
+
+	vertical-align: middle;
+	min-height: 100%;
+}
+.team-caption {
+	position: absolute;
+	top: 85%;
+	width: 100%;
+	z-index: 2;
 }
 .bg-image-2 {
 	background: url("../images/bg-image-2.jpg") 50% 0px no-repeat;
@@ -459,6 +470,12 @@ textarea {
 	text-align: center;
 }
 
+.gallery-photo {
+	width: 150%;
+    height: 150px;
+	object-fit: cover;
+}
+
 /* Navigations
 ----------------------------------------------------------------------------- */
 .header .navbar {
@@ -554,7 +571,7 @@ textarea {
 	float: left;
 }
 .site-name {
-	font-size: 36px;
+	font-size: 32px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
